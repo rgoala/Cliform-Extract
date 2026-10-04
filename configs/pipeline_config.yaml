@@ -1,0 +1,45 @@
+# Clinical Form Extraction Engine Configuration
+
+pipeline:
+  target_dpi: 300
+  enable_deskew: true
+  enable_contrast_enhancement: true
+
+barcodes:
+  enabled: true
+  engines:
+    - zxingcpp
+    - pylibdmtx
+    - pdf417decoder
+    - opencv
+    - pyzbar
+  supported_symbologies:
+    - DataMatrix
+    - PDF417
+    - QRCode
+    - Code128
+    - Code39
+    - EAN13
+
+checkboxes:
+  min_box_size: 14
+  max_box_size: 55
+  aspect_ratio_min: 0.75
+  aspect_ratio_max: 1.30
+  checked_threshold: 0.14
+  unchecked_threshold: 0.06
+
+tables:
+  min_cell_width: 40
+  min_cell_height: 18
+  line_min_length_ratio: 0.03
+
+text_recognition:
+  printed_engine: "paddleocr"       # paddleocr / tesseract
+  handwritten_engine: "trocr"       # trocr / parseq / local_vlm
+  confidence_threshold: 0.75
+
+hipaa:
+  default_mode: "operational_encrypted"   # operational_encrypted / safe_harbor_redacted
+  mask_dates: true
+  salt: "cliform_secure_salt_2026"

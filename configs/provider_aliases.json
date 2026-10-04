@@ -1,0 +1,84 @@
+{
+  "aliases": {
+    "first_name": [
+      "first name", "patient first name", "member first name", "given name", "pt first name", "first"
+    ],
+    "last_name": [
+      "last name", "patient last name", "member last name", "family name", "surname", "pt last name", "last"
+    ],
+    "phone_number": [
+      "phone number", "phone", "telephone", "patient phone", "member phone", "contact phone", "tel"
+    ],
+    "address": [
+      "address", "street address", "patient address", "home address", "mailing address"
+    ],
+    "city": [
+      "city"
+    ],
+    "state": [
+      "state", "st"
+    ],
+    "zip_code": [
+      "zip code", "zip", "postal code"
+    ],
+    "date_of_birth": [
+      "date of birth", "dob", "birth date", "d.o.b.", "patient dob", "pt dob"
+    ],
+    "gender_male": [
+      "male", "m"
+    ],
+    "gender_female": [
+      "female", "f"
+    ],
+    "member_id": [
+      "member id", "member id:", "subscriber id", "policy #", "policy number", "insurance id", "id #", "cardholder id"
+    ],
+    "npi_number": [
+      "npi number (individual)", "npi number", "npi", "npi #", "prescriber npi", "provider npi", "national provider identifier"
+    ],
+    "prescriber_specialty": [
+      "specialty", "physician specialty", "provider specialty"
+    ],
+    "dispense_as_written": [
+      "dispense as written", "daw", "brand medically necessary"
+    ],
+    "generic_substitution_permitted": [
+      "generic substitution permitted", "generic substitution permitted*", "substitution permitted"
+    ],
+    "new_therapy": [
+      "new therapy", "initial request", "new start", "initiation"
+    ],
+    "continuation_of_therapy": [
+      "continuation of therapy", "reauthorization", "renewal", "continuation of therapy - start date"
+    ],
+    "pharmacy_benefit": [
+      "pharmacy benefit", "rx benefit"
+    ],
+    "medical_benefit": [
+      "medical benefit", "major medical"
+    ],
+    "expedite_review": [
+      "request to expedite review", "urgent", "expedited", "stat request", "urgent review"
+    ],
+    "documentation_provided_yes": [
+      "yes"
+    ],
+    "documentation_provided_no": [
+      "no"
+    ]
+  },
+  "provider_signatures": {
+    "RxBenefits": [
+      "rxbenefits", "promptpa.com", "888.610.1180"
+    ],
+    "CVS_Caremark": [
+      "cvs caremark", "caremark.com", "caremark"
+    ],
+    "Express_Scripts": [
+      "express scripts", "esi", "express-scripts.com"
+    ],
+    "OptumRx": [
+      "optumrx", "optum", "optum.com"
+    ]
+  }
+}

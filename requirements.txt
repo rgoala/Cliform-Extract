@@ -1,0 +1,28 @@
+# Core Computer Vision & Processing
+numpy>=1.26.0
+opencv-python>=4.8.0
+scipy>=1.11.0
+Pillow>=10.0.0
+pypdf>=4.0.0
+
+# Schema & Data Modeling
+pydantic>=2.6.0
+
+# Barcode Engines (1D & 2D: DataMatrix, PDF417, QR, Code128)
+zxing-cpp>=2.2.0; platform_system != "Windows" or python_version < "3.13"
+pyzbar>=0.1.9
+pdf417decoder>=0.8.2
+pylibdmtx>=0.1.10
+
+# OCR & Handwriting Recognition
+pytesseract>=0.3.10
+# Optional specialized engines:
+# paddleocr>=2.7.0
+# transformers>=4.38.0
+# torch>=2.2.0
+
+# API & Security
+fastapi>=0.110.0
+uvicorn>=0.28.0
+pytest>=8.0.0
+PyYAML>=6.0.1
