@@ -1,0 +1,139 @@
+{
+  "document_metadata": {
+    "document_id": "DOC_CLI_001",
+    "form_type": "Medication Prior Authorization Request Form",
+    "provider_name": "RxBenefits",
+    "form_version_date": "05.15.2025",
+    "total_pages": 1,
+    "source_dpi": 300,
+    "hipaa_compliance_mode": "safe_harbor_redacted",
+    "processing_timestamp": "2026-10-04T15:58:08.874211+00:00"
+  },
+  "barcodes": [],
+  "request_date": null,
+  "request_to_expedite_review": null,
+  "patient_information": {
+    "first_name": {
+      "field_key": "token_value",
+      "label_text": null,
+      "raw_text": "[REDACTED_NAME]",
+      "normalized_value": "[REDACTED_NAME]",
+      "modality": "printed",
+      "confidence": 1.0,
+      "bounding_box": {
+        "ymin": 325,
+        "xmin": 250,
+        "ymax": 326,
+        "xmax": 262
+      },
+      "page_number": 1,
+      "is_redacted": true
+    },
+    "last_name": null,
+    "phone_number": null,
+    "address": null,
+    "city": null,
+    "state": null,
+    "zip_code": null,
+    "date_of_birth": {
+      "field_key": "token_value",
+      "label_text": null,
+      "raw_text": "[REDACTED_DATE]",
+      "normalized_value": "[REDACTED_DATE]",
+      "modality": "printed",
+      "confidence": 1.0,
+      "bounding_box": {
+        "ymin": 280,
+        "xmin": 175,
+        "ymax": 281,
+        "xmax": 175
+      },
+      "page_number": 1,
+      "is_redacted": true
+    },
+    "gender": {
+      "field_key": "gender",
+      "label_text": null,
+      "raw_text": "Male",
+      "normalized_value": "Male",
+      "modality": "checkbox",
+      "confidence": 0.909,
+      "bounding_box": {
+        "ymin": 569,
+        "xmin": 88,
+        "ymax": 604,
+        "xmax": 115
+      },
+      "page_number": 1,
+      "is_redacted": false
+    },
+    "member_id": {
+      "field_key": "token_value",
+      "label_text": null,
+      "raw_text": "ANON_10C0A07B3913",
+      "normalized_value": "ANON_10C0A07B3913",
+      "modality": "printed",
+      "confidence": 1.0,
+      "bounding_box": {
+        "ymin": 774,
+        "xmin": 12,
+        "ymax": 775,
+        "xmax": 23
+      },
+      "page_number": 1,
+      "is_redacted": true
+    },
+    "authorized_rep_name": null,
+    "authorized_rep_phone": null
+  },
+  "prescriber_information": {
+    "first_name": null,
+    "last_name": null,
+    "specialty": null,
+    "address": null,
+    "city": null,
+    "state": null,
+    "zip_code": null,
+    "npi_number": null,
+    "phone_number": null,
+    "fax_number": null
+  },
+  "dispensing_pharmacy": {
+    "pharmacy_name": null,
+    "pharmacy_fax_number": null
+  },
+  "medication_clinical_info": {
+    "medication_name_and_strength": null,
+    "dispense_as_written": null,
+    "generic_substitution_permitted": null,
+    "directions_for_use": null,
+    "quantity": null,
+    "day_supply": null,
+    "new_therapy": null,
+    "continuation_of_therapy": null,
+    "continuation_start_date": null,
+    "duration_of_therapy": null,
+    "icd10_codes_and_diagnosis": null,
+    "patient_height": null,
+    "patient_weight": null,
+    "pharmacy_benefit": null,
+    "medical_benefit": null,
+    "previously_failed_medications": null,
+    "documentation_provided_yes": null,
+    "documentation_provided_no": null
+  },
+  "attestation": {
+    "signature_detected": true,
+    "signature_modality": "signature",
+    "signature_confidence": 0.95,
+    "signature_bounding_box": {
+      "ymin": 722,
+      "xmin": 33,
+      "ymax": 723,
+      "xmax": 80
+    },
+    "date_signed": null
+  },
+  "raw_unmapped_fields": [],
+  "validation_status": {}
+}

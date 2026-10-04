@@ -1,0 +1,620 @@
+{
+  "document_metadata": {
+    "document_id": "DOC_CLI_001",
+    "form_type": "Medication Prior Authorization Request Form",
+    "provider_name": "RxBenefits",
+    "form_version_date": "05.15.2025",
+    "total_pages": 1,
+    "source_dpi": 300,
+    "hipaa_compliance_mode": "operational_encrypted",
+    "processing_timestamp": "2026-10-04T16:30:50.926382+00:00"
+  },
+  "barcodes": [],
+  "request_date": null,
+  "request_to_expedite_review": {
+    "field_key": "expedite_review",
+    "label_text": "Request to expedite review",
+    "mark_state": "unchecked",
+    "is_checked": false,
+    "confidence": 0.87,
+    "bounding_box": {
+      "ymin": 486,
+      "xmin": 774,
+      "ymax": 508,
+      "xmax": 845
+    },
+    "page_number": 1
+  },
+  "patient_information": {
+    "first_name": {
+      "field_key": "token_val",
+      "label_text": null,
+      "raw_text": "Rahul",
+      "normalized_value": "Rahul",
+      "modality": "printed",
+      "confidence": 0.96,
+      "bounding_box": {
+        "ymin": 644,
+        "xmin": 57,
+        "ymax": 674,
+        "xmax": 112
+      },
+      "page_number": 1,
+      "is_redacted": false
+    },
+    "last_name": {
+      "field_key": "token_val",
+      "label_text": null,
+      "raw_text": "Goala",
+      "normalized_value": "Goala",
+      "modality": "printed",
+      "confidence": 0.93,
+      "bounding_box": {
+        "ymin": 644,
+        "xmin": 612,
+        "ymax": 674,
+        "xmax": 669
+      },
+      "page_number": 1,
+      "is_redacted": false
+    },
+    "phone_number": {
+      "field_key": "token_val",
+      "label_text": null,
+      "raw_text": "8179570259",
+      "normalized_value": "8179570259",
+      "modality": "printed",
+      "confidence": 0.96,
+      "bounding_box": {
+        "ymin": 648,
+        "xmin": 1168,
+        "ymax": 665,
+        "xmax": 1290
+      },
+      "page_number": 1,
+      "is_redacted": false
+    },
+    "address": {
+      "field_key": "token_val",
+      "label_text": null,
+      "raw_text": "Kranti of Emerald",
+      "normalized_value": "Kranti of Emerald",
+      "modality": "printed",
+      "confidence": 0.94,
+      "bounding_box": {
+        "ymin": 714,
+        "xmin": 57,
+        "ymax": 769,
+        "xmax": 201
+      },
+      "page_number": 1,
+      "is_redacted": false
+    },
+    "city": {
+      "field_key": "token_val",
+      "label_text": null,
+      "raw_text": "Hyderabad MemberID:",
+      "normalized_value": "Hyderabad MemberID:",
+      "modality": "printed",
+      "confidence": 0.615,
+      "bounding_box": {
+        "ymin": 714,
+        "xmin": 742,
+        "ymax": 764,
+        "xmax": 863
+      },
+      "page_number": 1,
+      "is_redacted": false
+    },
+    "state": {
+      "field_key": "token_val",
+      "label_text": null,
+      "raw_text": "Telangana",
+      "normalized_value": "Telangana",
+      "modality": "printed",
+      "confidence": 0.96,
+      "bounding_box": {
+        "ymin": 714,
+        "xmin": 1167,
+        "ymax": 734,
+        "xmax": 1271
+      },
+      "page_number": 1,
+      "is_redacted": false
+    },
+    "zip_code": {
+      "field_key": "token_val",
+      "label_text": null,
+      "raw_text": "500094",
+      "normalized_value": "500094",
+      "modality": "printed",
+      "confidence": 0.95,
+      "bounding_box": {
+        "ymin": 714,
+        "xmin": 1344,
+        "ymax": 730,
+        "xmax": 1416
+      },
+      "page_number": 1,
+      "is_redacted": false
+    },
+    "date_of_birth": {
+      "field_key": "token_val",
+      "label_text": null,
+      "raw_text": "of",
+      "normalized_value": "of",
+      "modality": "printed",
+      "confidence": 0.96,
+      "bounding_box": {
+        "ymin": 750,
+        "xmin": 117,
+        "ymax": 769,
+        "xmax": 136
+      },
+      "page_number": 1,
+      "is_redacted": false
+    },
+    "gender": {
+      "field_key": "gender",
+      "label_text": null,
+      "raw_text": "Male",
+      "normalized_value": "Male",
+      "modality": "checkbox",
+      "confidence": 0.957,
+      "bounding_box": {
+        "ymin": 762,
+        "xmin": 510,
+        "ymax": 781,
+        "xmax": 556
+      },
+      "page_number": 1,
+      "is_redacted": false
+    },
+    "member_id": {
+      "field_key": "token_val",
+      "label_text": null,
+      "raw_text": "AETPGO321A",
+      "normalized_value": "AETPGO321A",
+      "modality": "printed",
+      "confidence": 0.59,
+      "bounding_box": {
+        "ymin": 760,
+        "xmin": 882,
+        "ymax": 785,
+        "xmax": 1094
+      },
+      "page_number": 1,
+      "is_redacted": false
+    },
+    "authorized_rep_name": {
+      "field_key": "token_val",
+      "label_text": null,
+      "raw_text": "Athulya Rahul",
+      "normalized_value": "Athulya Rahul",
+      "modality": "printed",
+      "confidence": 0.94,
+      "bounding_box": {
+        "ymin": 845,
+        "xmin": 55,
+        "ymax": 865,
+        "xmax": 192
+      },
+      "page_number": 1,
+      "is_redacted": false
+    },
+    "authorized_rep_phone": {
+      "field_key": "token_val",
+      "label_text": null,
+      "raw_text": "8179570259",
+      "normalized_value": "8179570259",
+      "modality": "printed",
+      "confidence": 0.96,
+      "bounding_box": {
+        "ymin": 648,
+        "xmin": 1168,
+        "ymax": 665,
+        "xmax": 1290
+      },
+      "page_number": 1,
+      "is_redacted": false
+    }
+  },
+  "prescriber_information": {
+    "first_name": {
+      "field_key": "token_val",
+      "label_text": null,
+      "raw_text": "Ramesh",
+      "normalized_value": "Ramesh",
+      "modality": "printed",
+      "confidence": 0.96,
+      "bounding_box": {
+        "ymin": 955,
+        "xmin": 57,
+        "ymax": 985,
+        "xmax": 136
+      },
+      "page_number": 1,
+      "is_redacted": false
+    },
+    "last_name": {
+      "field_key": "token_val",
+      "label_text": null,
+      "raw_text": "G",
+      "normalized_value": "G",
+      "modality": "printed",
+      "confidence": 0.9,
+      "bounding_box": {
+        "ymin": 959,
+        "xmin": 612,
+        "ymax": 976,
+        "xmax": 626
+      },
+      "page_number": 1,
+      "is_redacted": false
+    },
+    "specialty": {
+      "field_key": "token_val",
+      "label_text": null,
+      "raw_text": "Cardiology",
+      "normalized_value": "Cardiology",
+      "modality": "printed",
+      "confidence": 0.96,
+      "bounding_box": {
+        "ymin": 959,
+        "xmin": 1168,
+        "ymax": 980,
+        "xmax": 1273
+      },
+      "page_number": 1,
+      "is_redacted": false
+    },
+    "address": {
+      "field_key": "token_val",
+      "label_text": null,
+      "raw_text": "Yashoda Number Hospitals",
+      "normalized_value": "Yashoda Number Hospitals",
+      "modality": "printed",
+      "confidence": 0.933,
+      "bounding_box": {
+        "ymin": 1025,
+        "xmin": 55,
+        "ymax": 1080,
+        "xmax": 240
+      },
+      "page_number": 1,
+      "is_redacted": false
+    },
+    "city": {
+      "field_key": "token_val",
+      "label_text": null,
+      "raw_text": "Hyderabad",
+      "normalized_value": "Hyderabad",
+      "modality": "printed",
+      "confidence": 0.96,
+      "bounding_box": {
+        "ymin": 1025,
+        "xmin": 742,
+        "ymax": 1046,
+        "xmax": 848
+      },
+      "page_number": 1,
+      "is_redacted": false
+    },
+    "state": {
+      "field_key": "token_val",
+      "label_text": null,
+      "raw_text": "Tel",
+      "normalized_value": "Tel",
+      "modality": "printed",
+      "confidence": 0.73,
+      "bounding_box": {
+        "ymin": 1016,
+        "xmin": 1243,
+        "ymax": 1028,
+        "xmax": 1266
+      },
+      "page_number": 1,
+      "is_redacted": false
+    },
+    "zip_code": {
+      "field_key": "token_val",
+      "label_text": null,
+      "raw_text": "| £9003",
+      "normalized_value": "| £9003",
+      "modality": "printed",
+      "confidence": 0.69,
+      "bounding_box": {
+        "ymin": 1015,
+        "xmin": 1329,
+        "ymax": 1049,
+        "xmax": 1402
+      },
+      "page_number": 1,
+      "is_redacted": false
+    },
+    "npi_number": {
+      "field_key": "token_val",
+      "label_text": null,
+      "raw_text": "HSGD1667272",
+      "normalized_value": "HSGD1667272",
+      "modality": "printed",
+      "confidence": 0.91,
+      "bounding_box": {
+        "ymin": 1072,
+        "xmin": 318,
+        "ymax": 1101,
+        "xmax": 583
+      },
+      "page_number": 1,
+      "is_redacted": false
+    },
+    "phone_number": {
+      "field_key": "token_val",
+      "label_text": null,
+      "raw_text": "9919919199",
+      "normalized_value": "9919919199",
+      "modality": "printed",
+      "confidence": 0.96,
+      "bounding_box": {
+        "ymin": 1071,
+        "xmin": 915,
+        "ymax": 1101,
+        "xmax": 1140
+      },
+      "page_number": 1,
+      "is_redacted": false
+    },
+    "fax_number": {
+      "field_key": "token_val",
+      "label_text": null,
+      "raw_text": "40089008",
+      "normalized_value": "40089008",
+      "modality": "printed",
+      "confidence": 0.96,
+      "bounding_box": {
+        "ymin": 1139,
+        "xmin": 462,
+        "ymax": 1167,
+        "xmax": 633
+      },
+      "page_number": 1,
+      "is_redacted": false
+    }
+  },
+  "dispensing_pharmacy": {
+    "pharmacy_name": {
+      "field_key": "token_val",
+      "label_text": null,
+      "raw_text": "Apollo",
+      "normalized_value": "Apollo",
+      "modality": "printed",
+      "confidence": 0.92,
+      "bounding_box": {
+        "ymin": 1250,
+        "xmin": 242,
+        "ymax": 1288,
+        "xmax": 355
+      },
+      "page_number": 1,
+      "is_redacted": false
+    },
+    "pharmacy_fax_number": {
+      "field_key": "token_val",
+      "label_text": null,
+      "raw_text": "499900399",
+      "normalized_value": "499900399",
+      "modality": "printed",
+      "confidence": 0.42,
+      "bounding_box": {
+        "ymin": 1253,
+        "xmin": 1251,
+        "ymax": 1282,
+        "xmax": 1448
+      },
+      "page_number": 1,
+      "is_redacted": false
+    }
+  },
+  "medication_clinical_info": {
+    "medication_name_and_strength": {
+      "field_key": "token_val",
+      "label_text": null,
+      "raw_text": "Cidmus 50mg for",
+      "normalized_value": "Cidmus 50mg for",
+      "modality": "printed",
+      "confidence": 0.94,
+      "bounding_box": {
+        "ymin": 1388,
+        "xmin": 57,
+        "ymax": 1443,
+        "xmax": 216
+      },
+      "page_number": 1,
+      "is_redacted": false
+    },
+    "dispense_as_written": {
+      "field_key": "dispense_as_written",
+      "label_text": "Dispense as written",
+      "mark_state": "checked",
+      "is_checked": true,
+      "confidence": 0.964,
+      "bounding_box": {
+        "ymin": 1358,
+        "xmin": 1068,
+        "ymax": 1381,
+        "xmax": 1156
+      },
+      "page_number": 1
+    },
+    "generic_substitution_permitted": {
+      "field_key": "generic_substitution_permitted",
+      "label_text": "Generic substitution permitted*",
+      "mark_state": "unchecked",
+      "is_checked": false,
+      "confidence": 0.99,
+      "bounding_box": {
+        "ymin": 1358,
+        "xmin": 1333,
+        "ymax": 1376,
+        "xmax": 1406
+      },
+      "page_number": 1
+    },
+    "directions_for_use": {
+      "field_key": "token_val",
+      "label_text": null,
+      "raw_text": "1/2 tab BID pc",
+      "normalized_value": "1/2 tab BID pc",
+      "modality": "printed",
+      "confidence": 0.932,
+      "bounding_box": {
+        "ymin": 1454,
+        "xmin": 58,
+        "ymax": 1478,
+        "xmax": 217
+      },
+      "page_number": 1,
+      "is_redacted": false
+    },
+    "quantity": {
+      "field_key": "token_val",
+      "label_text": null,
+      "raw_text": "1",
+      "normalized_value": "1",
+      "modality": "printed",
+      "confidence": 0.87,
+      "bounding_box": {
+        "ymin": 1454,
+        "xmin": 1055,
+        "ymax": 1473,
+        "xmax": 1062
+      },
+      "page_number": 1,
+      "is_redacted": false
+    },
+    "day_supply": {
+      "field_key": "token_val",
+      "label_text": null,
+      "raw_text": "30",
+      "normalized_value": "30",
+      "modality": "printed",
+      "confidence": 0.96,
+      "bounding_box": {
+        "ymin": 1454,
+        "xmin": 1361,
+        "ymax": 1473,
+        "xmax": 1387
+      },
+      "page_number": 1,
+      "is_redacted": false
+    },
+    "new_therapy": null,
+    "continuation_of_therapy": null,
+    "continuation_start_date": null,
+    "duration_of_therapy": null,
+    "icd10_codes_and_diagnosis": {
+      "field_key": "token_val",
+      "label_text": null,
+      "raw_text": "150",
+      "normalized_value": "150",
+      "modality": "printed",
+      "confidence": 0.95,
+      "bounding_box": {
+        "ymin": 1599,
+        "xmin": 61,
+        "ymax": 1639,
+        "xmax": 130
+      },
+      "page_number": 1,
+      "is_redacted": false
+    },
+    "patient_height": {
+      "field_key": "token_val",
+      "label_text": null,
+      "raw_text": "170",
+      "normalized_value": 170,
+      "modality": "printed",
+      "confidence": 0.95,
+      "bounding_box": {
+        "ymin": 1566,
+        "xmin": 1000,
+        "ymax": 1591,
+        "xmax": 1034
+      },
+      "page_number": 1,
+      "is_redacted": false
+    },
+    "patient_weight": null,
+    "pharmacy_benefit": {
+      "field_key": "pharmacy_benefit",
+      "label_text": "Pharmacy Benefit",
+      "mark_state": "checked",
+      "is_checked": true,
+      "confidence": 0.945,
+      "bounding_box": {
+        "ymin": 1571,
+        "xmin": 1351,
+        "ymax": 1595,
+        "xmax": 1445
+      },
+      "page_number": 1
+    },
+    "medical_benefit": {
+      "field_key": "medical_benefit",
+      "label_text": "Medical Benefit",
+      "mark_state": "unchecked",
+      "is_checked": false,
+      "confidence": 0.99,
+      "bounding_box": {
+        "ymin": 1618,
+        "xmin": 1349,
+        "ymax": 1637,
+        "xmax": 1423
+      },
+      "page_number": 1
+    },
+    "previously_failed_medications": null,
+    "documentation_provided_yes": {
+      "field_key": "documentation_provided_yes",
+      "label_text": "Yes",
+      "mark_state": "unchecked",
+      "is_checked": false,
+      "confidence": 0.99,
+      "bounding_box": {
+        "ymin": 1847,
+        "xmin": 1073,
+        "ymax": 1865,
+        "xmax": 1108
+      },
+      "page_number": 1
+    },
+    "documentation_provided_no": {
+      "field_key": "documentation_provided_no",
+      "label_text": "No",
+      "mark_state": "unchecked",
+      "is_checked": false,
+      "confidence": 0.99,
+      "bounding_box": {
+        "ymin": 1847,
+        "xmin": 1145,
+        "ymax": 1866,
+        "xmax": 1191
+      },
+      "page_number": 1
+    }
+  },
+  "attestation": {
+    "signature_detected": true,
+    "signature_modality": "signature",
+    "signature_confidence": 0.95,
+    "signature_bounding_box": {
+      "ymin": 1992,
+      "xmin": 215,
+      "ymax": 2015,
+      "xmax": 326
+    },
+    "date_signed": null
+  },
+  "raw_unmapped_fields": [],
+  "validation_status": {}
+}

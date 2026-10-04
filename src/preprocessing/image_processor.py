@@ -81,14 +81,16 @@ class ImageProcessor:
         return rotated, angle
 
     def standardize_resolution(self, image: np.ndarray) -> np.ndarray:
-        """Scales image so document width matches target standard width (at ~300 DPI)."""
+        """Scales low-resolution images to standard ~300 DPI, preserving native high-res images."""
         (h, w) = image.shape[:2]
-        if abs(w - self.standard_page_width) < 50:
+        # If image is already high resolution (>= 1600px wide, e.g. 200-300 DPI scans), preserve original pixels
+        if w >= 1600:
             return image
 
         scale = self.standard_page_width / float(w)
         target_h = int(h * scale)
         return cv2.resize(image, (self.standard_page_width, target_h), interpolation=cv2.INTER_LANCZOS4)
+
 
     def enhance_contrast(self, gray: np.ndarray) -> np.ndarray:
         """Applies Contrast Limited Adaptive Histogram Equalization (CLAHE)."""

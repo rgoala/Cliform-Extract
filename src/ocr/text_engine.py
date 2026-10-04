@@ -1,9 +1,12 @@
 """
 Text Recognition Engine (Printed OCR & Handwritten HTR).
 Extracts text lines and tokens with character/word bounding boxes.
+Automatically discovers and configures Tesseract on Windows.
 """
 
 import logging
+import os
+import shutil
 from typing import List, Optional, Tuple
 import cv2
 import numpy as np
@@ -16,6 +19,19 @@ logger = logging.getLogger(__name__)
 try:
     import pytesseract
     HAS_TESSERACT = True
+
+    # Auto-detect Tesseract binary on Windows if not already on PATH
+    if not shutil.which("tesseract"):
+        common_paths = [
+            r"C:\Program Files\Tesseract-OCR\tesseract.exe",
+            r"C:\Program Files (x86)\Tesseract-OCR\tesseract.exe",
+            os.path.expanduser(r"~\AppData\Local\Programs\Tesseract-OCR\tesseract.exe")
+        ]
+        for p in common_paths:
+            if os.path.exists(p):
+                pytesseract.pytesseract.tesseract_cmd = p
+                logger.info(f"Configured Tesseract binary at: {p}")
+                break
 except ImportError:
     HAS_TESSERACT = False
 
@@ -51,7 +67,7 @@ class TextEngine:
 
         tokens: List[ExtractedField] = []
 
-        # 1. Primary: PaddleOCR (High accuracy on form text)
+        # 1. Primary: PaddleOCR (if installed)
         if self._paddle_ocr is not None:
             try:
                 result = self._paddle_ocr.ocr(image, cls=True)
@@ -70,11 +86,12 @@ class TextEngine:
                             bounding_box=bbox,
                             page_number=page_number
                         ))
-                return tokens
+                if tokens:
+                    return tokens
             except Exception as e:
                 logger.debug(f"PaddleOCR extraction failed: {e}")
 
-        # 2. Fallback: PyTesseract with bounding boxes
+        # 2. PyTesseract with bounding boxes
         if HAS_TESSERACT:
             try:
                 data = pytesseract.image_to_data(image, output_type=pytesseract.Output.DICT)
@@ -82,7 +99,7 @@ class TextEngine:
                 for i in range(n_boxes):
                     text = data["text"][i].strip()
                     conf = float(data["conf"][i])
-                    if text and conf > 0:
+                    if text and conf > 15:
                         x, y, w, h = data["left"][i], data["top"][i], data["width"][i], data["height"][i]
                         bbox = BoundingBox(ymin=y, xmin=x, ymax=y + h, xmax=x + w)
                         tokens.append(ExtractedField(
@@ -96,7 +113,7 @@ class TextEngine:
                         ))
                 return tokens
             except Exception as e:
-                logger.debug(f"PyTesseract extraction error (likely tesseract binary not installed on host): {e}")
+                logger.error(f"PyTesseract extraction error: {e}")
 
         return tokens
 
